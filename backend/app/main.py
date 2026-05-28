@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import os
 
 from app.auth import (
     ACCESS_TOKEN_EXPIRE_SECONDS,
@@ -13,6 +15,20 @@ app = FastAPI(
     title="JWT Auth Service",
     description="FastAPI service that issues and refreshes JWT tokens.",
     version="0.1.0",
+)
+
+# Allow the frontend origin(s) to call the API.
+# Override ALLOWED_ORIGINS with a comma-separated list of URLs in production,
+# e.g. ALLOWED_ORIGINS=https://myapp.example.com
+_raw_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173")
+_allowed_origins = [o.strip() for o in _raw_origins.split(",") if o.strip()]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 

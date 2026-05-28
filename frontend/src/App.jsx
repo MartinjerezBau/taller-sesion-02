@@ -1,0 +1,32 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import WelcomePage from './pages/WelcomePage';
+import { isAuthenticated } from './auth';
+
+function ProtectedRoute({ children }) {
+  if (!isAuthenticated()) {
+    return <Navigate to="/login" replace />;
+  }
+  return children;
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route
+          path="/welcome"
+          element={
+            <ProtectedRoute>
+              <WelcomePage />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;

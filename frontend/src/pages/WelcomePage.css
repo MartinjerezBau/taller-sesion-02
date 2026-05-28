@@ -1,0 +1,304 @@
+/* ========================
+   Welcome Page Styles
+   ======================== */
+
+.welcome-page {
+  min-height: 100vh;
+  background-color: var(--color-canvas-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================
+   Navigation Bar
+   ======================== */
+.nav-bar {
+  background-color: var(--color-canvas-dark);
+  border-bottom: 1px solid var(--color-hairline-dark);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-xl);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-ps-logo {
+  width: 140px;
+  height: 28px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.nav-username {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  color: var(--color-on-dark);
+}
+
+/* ========================
+   Buttons
+   ======================== */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border: none;
+  border-radius: var(--rounded-full);
+  padding: 12px 28px;
+  height: 48px;
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.45px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-pressed);
+}
+
+.btn-primary:active {
+  background-color: var(--color-primary-active);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-on-dark);
+  border: 1px solid var(--color-ash-dark);
+  border-radius: var(--rounded-full);
+  padding: 10px 24px;
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.324px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-on-dark-mute);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.btn-secondary-dark {
+  background-color: transparent;
+  color: var(--color-on-primary);
+  border: 2px solid var(--color-on-primary);
+  border-radius: var(--rounded-full);
+  padding: 12px 28px;
+  height: 48px;
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.45px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-secondary-dark:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ========================
+   Hero Section (Dark Canvas)
+   ======================== */
+.hero-section {
+  background-color: var(--color-canvas-dark);
+  padding: var(--spacing-section) var(--spacing-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.hero-title {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.1px;
+  color: var(--color-on-dark);
+}
+
+.hero-body {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--color-body-dark);
+  max-width: 560px;
+}
+
+/* ========================
+   Features Section (Light Canvas)
+   ======================== */
+.features-section {
+  background-color: var(--color-canvas-light);
+  padding: var(--spacing-section) var(--spacing-xl);
+}
+
+.features-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl);
+}
+
+.features-title {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: var(--color-ink);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.feature-card {
+  background-color: var(--color-surface-card);
+  border-radius: var(--rounded-md);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.feature-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.feature-card-title {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: var(--color-ink);
+}
+
+.feature-card-body {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-body-light);
+}
+
+/* ========================
+   CTA Band (PlayStation Blue)
+   ======================== */
+.cta-band {
+  background-color: var(--color-primary);
+  padding: var(--spacing-section) var(--spacing-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.cta-inner {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.cta-title {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0;
+  color: var(--color-on-primary);
+}
+
+.cta-body {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 560px;
+}
+
+/* ========================
+   Footer
+   ======================== */
+.footer {
+  background-color: var(--color-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  font-family: 'PlayStation SST', 'SST', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 800px;
+  text-align: center;
+}
+
+/* ========================
+   Responsive
+   ======================== */
+@media (max-width: 640px) {
+  .nav-bar {
+    padding: 0 var(--spacing-md);
+  }
+
+  .hero-section,
+  .features-section,
+  .cta-band {
+    padding: var(--spacing-xxl) var(--spacing-md);
+  }
+
+  .hero-title {
+    font-size: 35px;
+  }
+
+  .features-title {
+    font-size: 28px;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .nav-username {
+    display: none;
+  }
+}
