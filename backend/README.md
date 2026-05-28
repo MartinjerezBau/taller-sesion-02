@@ -22,7 +22,7 @@ A minimal **FastAPI** Web API that demonstrates JSON Web Token (JWT) authenticat
 | FastAPI   | Web framework                  |
 | Uvicorn   | ASGI server                    |
 | python-jose | JWT encode / decode          |
-| passlib   | Password hashing (bcrypt)      |
+| bcrypt    | Password hashing               |
 | Poetry    | Dependency management          |
 | Docker    | Containerisation               |
 
