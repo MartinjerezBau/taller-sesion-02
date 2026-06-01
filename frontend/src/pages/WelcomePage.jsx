@@ -88,6 +88,126 @@ export default function WelcomePage() {
         </div>
       </section>
 
+      {/* Microsoft Certifications 2026 Section */}
+      <section className="certifications-section">
+        <div className="certifications-inner">
+          <h2 className="certifications-title">Microsoft Certifications 2026</h2>
+          <p className="certifications-subtitle">
+            Validate your cloud, AI, and data skills with the latest Microsoft certifications for 2026.
+          </p>
+          <div className="certifications-grid">
+            <div className="cert-card">
+              <div className="cert-badge cert-badge--beginner">Beginner</div>
+              <div className="cert-icon">☁️</div>
+              <h3 className="cert-card-title">Azure Fundamentals</h3>
+              <p className="cert-exam-code">AZ-900</p>
+              <p className="cert-card-body">
+                Foundational knowledge of cloud services and how those services are provided with
+                Microsoft Azure. Ideal for those starting a cloud career.
+              </p>
+              <a
+                className="cert-link"
+                href="https://learn.microsoft.com/credentials/certifications/azure-fundamentals/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more →
+              </a>
+            </div>
+            <div className="cert-card">
+              <div className="cert-badge cert-badge--beginner">Beginner · New 2026</div>
+              <div className="cert-icon">🤖</div>
+              <h3 className="cert-card-title">Azure AI Fundamentals</h3>
+              <p className="cert-exam-code">AI-901</p>
+              <p className="cert-card-body">
+                Foundational AI concepts including machine learning and responsible AI, with
+                hands-on skills using Microsoft Azure AI Foundry. Updated April 2026.
+              </p>
+              <a
+                className="cert-link"
+                href="https://learn.microsoft.com/credentials/certifications/azure-ai-fundamentals/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more →
+              </a>
+            </div>
+            <div className="cert-card">
+              <div className="cert-badge cert-badge--associate">Associate</div>
+              <div className="cert-icon">🧠</div>
+              <h3 className="cert-card-title">Azure AI Engineer Associate</h3>
+              <p className="cert-exam-code">AI-102</p>
+              <p className="cert-card-body">
+                Design and implement AI solutions using Azure AI services including natural language
+                processing, computer vision, knowledge mining, and generative AI.
+              </p>
+              <a
+                className="cert-link"
+                href="https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more →
+              </a>
+            </div>
+            <div className="cert-card">
+              <div className="cert-badge cert-badge--associate">Associate · New 2026</div>
+              <div className="cert-icon">🔐</div>
+              <h3 className="cert-card-title">Cloud and AI Security Engineer</h3>
+              <p className="cert-exam-code">SC-500</p>
+              <p className="cert-card-body">
+                Implement end-to-end security controls for cloud and AI workloads. Replaces
+                AZ-500 with expanded coverage of AI model protection. Beta available May 2026.
+              </p>
+              <a
+                className="cert-link"
+                href="https://learn.microsoft.com/credentials/certifications/exams/sc-500"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more →
+              </a>
+            </div>
+            <div className="cert-card">
+              <div className="cert-badge cert-badge--associate">Associate</div>
+              <div className="cert-icon">📊</div>
+              <h3 className="cert-card-title">Fabric Data Engineer Associate</h3>
+              <p className="cert-exam-code">DP-700</p>
+              <p className="cert-card-body">
+                Implement data engineering solutions using Microsoft Fabric. Covers data ingestion,
+                transformation, orchestration, and optimization. Skills updated April 2026.
+              </p>
+              <a
+                className="cert-link"
+                href="https://learn.microsoft.com/credentials/certifications/fabric-data-engineer-associate/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more →
+              </a>
+            </div>
+            <div className="cert-card">
+              <div className="cert-badge cert-badge--associate">Associate</div>
+              <div className="cert-icon">📈</div>
+              <h3 className="cert-card-title">Fabric Analytics Engineer Associate</h3>
+              <p className="cert-exam-code">DP-600</p>
+              <p className="cert-card-body">
+                Design, create, and deploy enterprise-scale analytics solutions using Microsoft
+                Fabric. Validate your skills in building semantic models and data pipelines.
+              </p>
+              <a
+                className="cert-link"
+                href="https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Blue CTA Band */}
       <section className="cta-band">
         <div className="cta-inner">
